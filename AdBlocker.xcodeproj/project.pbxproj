@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		593558181B6D186B00A4284B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593558171B6D186B00A4284B /* AppDelegate.swift */; };
+		5935581A1B6D186B00A4284B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593558191B6D186B00A4284B /* ViewController.swift */; };
+		5935581D1B6D186B00A4284B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5935581B1B6D186B00A4284B /* Main.storyboard */; };
+		5935581F1B6D186B00A4284B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5935581E1B6D186B00A4284B /* Assets.xcassets */; };
+		593558221B6D186B00A4284B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 593558201B6D186B00A4284B /* LaunchScreen.storyboard */; };
+		593558301B6D191500A4284B /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 5935582F1B6D191500A4284B /* blockerList.json */; };
+		593558321B6D191500A4284B /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593558311B6D191500A4284B /* ActionRequestHandler.swift */; };
+		593558361B6D191500A4284B /* AdBlocker-ext.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5935582D1B6D191500A4284B /* AdBlocker-ext.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		59F9709E1B6D1E3D0035DE74 /* ad_servers.txt in Resources */ = {isa = PBXBuildFile; fileRef = 59F9709D1B6D1E3D0035DE74 /* ad_servers.txt */; };
+		59F970A01B6D29C70035DE74 /* blocked.json in Resources */ = {isa = PBXBuildFile; fileRef = 59F9709F1B6D29C70035DE74 /* blocked.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		593558341B6D191500A4284B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5935580C1B6D186B00A4284B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5935582C1B6D191500A4284B;
+			remoteInfo = "AdBlocker-ext";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5935583A1B6D191500A4284B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				593558361B6D191500A4284B /* AdBlocker-ext.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		593558141B6D186B00A4284B /* AdBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		593558171B6D186B00A4284B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		593558191B6D186B00A4284B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5935581C1B6D186B00A4284B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5935581E1B6D186B00A4284B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		593558211B6D186B00A4284B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		593558231B6D186B00A4284B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5935582D1B6D191500A4284B /* AdBlocker-ext.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AdBlocker-ext.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5935582F1B6D191500A4284B /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		593558311B6D191500A4284B /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
+		593558331B6D191500A4284B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59DAF5E41B6E34440015DFE0 /* AdBlocker-ext.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "AdBlocker-ext.entitlements"; sourceTree = "<group>"; };
+		59DAF5E51B6E346E0015DFE0 /* AdBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AdBlocker.entitlements; sourceTree = "<group>"; };
+		59F9709D1B6D1E3D0035DE74 /* ad_servers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ad_servers.txt; sourceTree = "<group>"; };
+		59F9709F1B6D29C70035DE74 /* blocked.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = blocked.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		593558111B6D186B00A4284B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5935582A1B6D191500A4284B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5935580B1B6D186B00A4284B = {
+			isa = PBXGroup;
+			children = (
+				593558161B6D186B00A4284B /* AdBlocker */,
+				5935582E1B6D191500A4284B /* AdBlocker-ext */,
+				593558151B6D186B00A4284B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		593558151B6D186B00A4284B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				593558141B6D186B00A4284B /* AdBlocker.app */,
+				5935582D1B6D191500A4284B /* AdBlocker-ext.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		593558161B6D186B00A4284B /* AdBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				59DAF5E51B6E346E0015DFE0 /* AdBlocker.entitlements */,
+				593558171B6D186B00A4284B /* AppDelegate.swift */,
+				593558191B6D186B00A4284B /* ViewController.swift */,
+				5935581B1B6D186B00A4284B /* Main.storyboard */,
+				5935581E1B6D186B00A4284B /* Assets.xcassets */,
+				593558201B6D186B00A4284B /* LaunchScreen.storyboard */,
+				593558231B6D186B00A4284B /* Info.plist */,
+				59F9709D1B6D1E3D0035DE74 /* ad_servers.txt */,
+			);
+			path = AdBlocker;
+			sourceTree = "<group>";
+		};
+		5935582E1B6D191500A4284B /* AdBlocker-ext */ = {
+			isa = PBXGroup;
+			children = (
+				59DAF5E41B6E34440015DFE0 /* AdBlocker-ext.entitlements */,
+				5935582F1B6D191500A4284B /* blockerList.json */,
+				593558311B6D191500A4284B /* ActionRequestHandler.swift */,
+				593558331B6D191500A4284B /* Info.plist */,
+				59F9709F1B6D29C70035DE74 /* blocked.json */,
+			);
+			path = "AdBlocker-ext";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		593558131B6D186B00A4284B /* AdBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 593558261B6D186B00A4284B /* Build configuration list for PBXNativeTarget "AdBlocker" */;
+			buildPhases = (
+				593558101B6D186B00A4284B /* Sources */,
+				593558111B6D186B00A4284B /* Frameworks */,
+				593558121B6D186B00A4284B /* Resources */,
+				5935583A1B6D191500A4284B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				593558351B6D191500A4284B /* PBXTargetDependency */,
+			);
+			name = AdBlocker;
+			productName = AdBlocker;
+			productReference = 593558141B6D186B00A4284B /* AdBlocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5935582C1B6D191500A4284B /* AdBlocker-ext */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 593558371B6D191500A4284B /* Build configuration list for PBXNativeTarget "AdBlocker-ext" */;
+			buildPhases = (
+				593558291B6D191500A4284B /* Sources */,
+				5935582A1B6D191500A4284B /* Frameworks */,
+				5935582B1B6D191500A4284B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AdBlocker-ext";
+			productName = "AdBlocker-ext";
+			productReference = 5935582D1B6D191500A4284B /* AdBlocker-ext.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5935580C1B6D186B00A4284B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Laughing Buddha Software";
+				TargetAttributes = {
+					593558131B6D186B00A4284B = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = ZMZ4B57MB6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					5935582C1B6D191500A4284B = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = ZMZ4B57MB6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 5935580F1B6D186B00A4284B /* Build configuration list for PBXProject "AdBlocker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5935580B1B6D186B00A4284B;
+			productRefGroup = 593558151B6D186B00A4284B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				593558131B6D186B00A4284B /* AdBlocker */,
+				5935582C1B6D191500A4284B /* AdBlocker-ext */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		593558121B6D186B00A4284B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				593558221B6D186B00A4284B /* LaunchScreen.storyboard in Resources */,
+				5935581F1B6D186B00A4284B /* Assets.xcassets in Resources */,
+				59F9709E1B6D1E3D0035DE74 /* ad_servers.txt in Resources */,
+				5935581D1B6D186B00A4284B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5935582B1B6D191500A4284B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F970A01B6D29C70035DE74 /* blocked.json in Resources */,
+				593558301B6D191500A4284B /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		593558101B6D186B00A4284B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5935581A1B6D186B00A4284B /* ViewController.swift in Sources */,
+				593558181B6D186B00A4284B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		593558291B6D191500A4284B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				593558321B6D191500A4284B /* ActionRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		593558351B6D191500A4284B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5935582C1B6D191500A4284B /* AdBlocker-ext */;
+			targetProxy = 593558341B6D191500A4284B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5935581B1B6D186B00A4284B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5935581C1B6D186B00A4284B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		593558201B6D186B00A4284B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				593558211B6D186B00A4284B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		593558241B6D186B00A4284B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		593558251B6D186B00A4284B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		593558271B6D186B00A4284B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AdBlocker/AdBlocker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = AdBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lbs.AdBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		593558281B6D186B00A4284B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AdBlocker/AdBlocker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = AdBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lbs.AdBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		593558381B6D191500A4284B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "AdBlocker-ext/AdBlocker-ext.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "AdBlocker-ext/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lbs.AdBlocker.AdBlocker-ext";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		593558391B6D191500A4284B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "AdBlocker-ext/AdBlocker-ext.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "AdBlocker-ext/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lbs.AdBlocker.AdBlocker-ext";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5935580F1B6D186B00A4284B /* Build configuration list for PBXProject "AdBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				593558241B6D186B00A4284B /* Debug */,
+				593558251B6D186B00A4284B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		593558261B6D186B00A4284B /* Build configuration list for PBXNativeTarget "AdBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				593558271B6D186B00A4284B /* Debug */,
+				593558281B6D186B00A4284B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		593558371B6D191500A4284B /* Build configuration list for PBXNativeTarget "AdBlocker-ext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				593558381B6D191500A4284B /* Debug */,
+				593558391B6D191500A4284B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5935580C1B6D186B00A4284B /* Project object */;
+}
